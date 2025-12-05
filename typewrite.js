@@ -50,7 +50,9 @@
                                                                                                                                                                                                                      
    
       
-    `;
+    
+    
+                                                                       `;
     
     function typeWriter() {
         if (!outputElement) {
