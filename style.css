@@ -50,8 +50,43 @@ pre {
 
 #ada-section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
   gap: 2%;
   margin-top: 5%;
+}
+
+#nvindia{
+  color: #005a00 !important;
+  font-size: 1px;
+}
+
+.mini-ascii{
+padding: 2em;
+border: #005a00;
+border-style: dashed;
+align-items: center;
+width: fit-content;
+}
+
+#epfl{
+  font-size: 1.2px;
+  width: 100%;
+
+}
+
+#ascii-text {
+  display: flex;
+  flex-direction: row;
+}
+#homage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2%;
+  width: 50%;
+}
+.color{
+  color: white;
+  background-color: #005a00;
 }
