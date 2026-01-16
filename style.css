@@ -1,43 +1,57 @@
-    @layer base, utils, components;
+@layer base, utils, components;
 
-    @import 'https://cdn.jsdelivr.net/npm/@webtui/css@0.0.5/dist/base.css';
+@import "https://cdn.jsdelivr.net/npm/@webtui/css@0.0.5/dist/base.css";
 
-    /* Utils */
-    @import 'https://cdn.jsdelivr.net/npm/@webtui/css@0.0.5/dist/utils/box.css';
+/* Utils */
+@import "https://cdn.jsdelivr.net/npm/@webtui/css@0.0.5/dist/utils/box.css";
 
-    /* Components */
-    @import 'https://cdn.jsdelivr.net/npm/@webtui/css@0.0.5/dist/components/button.css';
-    @import 'https://cdn.jsdelivr.net/npm/@webtui/css@0.0.5/dist/components/typography.css';
-
-
+/* Components */
+@import "https://cdn.jsdelivr.net/npm/@webtui/css@0.0.5/dist/components/button.css";
+@import "https://cdn.jsdelivr.net/npm/@webtui/css@0.0.5/dist/components/typography.css";
 
 
+html{
+  background-color: rgb(230, 230, 230);
+}
+body {
+  justify-content: center;
+  background-color: rgb(230, 230, 230);
+  margin: 0;
+  padding: 5%;
+  align-items: center;
+  gap: 1%;
+}
+
+pre {
+  color: #005a00 !important;
+  font-size: 0.5em;
+  font-family: monospace;
+}
+
+#ascii-event {
+  font-size: 0.1em;
+}
+#btn {
+  background-color: #005a00 !important;
+}
+
+.green {
+  background-color: #005a00;
+  padding: 0.3%;
+  color: white
+}
+
+.text-container {
+  width: 70%;
+  text-align: justify;
 
 
+}
 
-    body {
-        justify-content: center;
-        background-color: rgb(230, 230, 230);
-        margin: 0;
-        padding: 5%;
-        align-items: center;
-        gap: 1%;
-    }
-
-
-    pre {
-        color: #005a00 !important;
-        font-size: 0.5em;
-        font-family: monospace;
-    }
-
-    #ascii-event {
-        font-size: 0.1em;
-    }#
-    .btn{
-        background-color:#005a00 !important;
-    }
-
-    .green{
-        color: #005a00;
-    }
+#ada-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2%;
+  margin-top: 5%;
+}

@@ -8,25 +8,38 @@
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@webtui/css@0.0.5/dist/full.css" />
-    <script src="typewrite.js"></script>
+    <script src="asciiWrite.js"></script>
+    <script src="typeWrite.js"></script>
+    <script src="Ada.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // DemarrerAnimation1 retourne une Promise.
+            logoAnimation()
+                // .then() est exécuté seulement quand la Promise est résolue (l'animation 1 est finie)
+                .then(() => {
+                    console.log("-> Animation 1 est COMPLETE. Démarrage de l'Animation 2.");
+                    aboutWebzine();
+                })
+                .catch(error => {
+                    console.error("Erreur lors de l'enchaînement des animations:", error);
+                });
+        });
+    </script>
   </head>
   <body>
 </span></header>
     <pre id="ascii">                                                                                                                                                                                                              
     </pre>
-    <h1 style="width: 70%; text-align: justify;">
-        this fanzine is dedicated to all the <span class="green"> woman</span> in the world who code, build, design, create, invent, innovate and inspire. without them we woudn't be able to play our favorite game, surfing the web, to facetime our friends and family, to do motion design, to create digital art, to see the echograph of our unborn childs, to listent to music.
-        <br>
-        <br>
-        </h1>
-        <h1>Everyone say that turing is the father of computer science, but behind this father there is always a <span>mother</span>. Ada Lovelace, She is the first human who writed an algorithm for a machine, the first computer program in history.
-        </h1>
+    <div id="text-container" class="text-container">
+  
+
+        </div>
         
     
 
 
-
-<pre id="ascii-event">
+<section id="ada-section">
+<pre style="font-size: 2px;" id="ascii-ada">
                                                                                                                                                                                                                                                                                                                                                                                                                     
                                                                                                                                                                                                                                                                                                                                                                                                                 
                                                                                                                                                                                                                                                                                                                                                                                                                 
@@ -303,9 +316,9 @@
                                                                                                                                                                                                                                                                                                                                                                                                                 
                                                                                                                                                                 </pre>
 
-<div class="button-container">
-    <button class="btn">girl im'not a looser i know who she is</button>
-    <button class="btn">who the fuck is that</button>
-</div>                                                                                                                                                           
+       <h1 id="ada-text">
+       
+       </h1>                                                                                                                                                 
+</section>
   </body>
 </html>
